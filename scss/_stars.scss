@@ -1,11 +1,12 @@
 
-  $starColor: #c3a40f;
+  $starColor: #EEDC82;
   .star {
     position: absolute;
     top: 51vh;
     left: 52vw;
-    transform: scale(.4);
+    transform: scale(.5);
     float: left;
+    z-index: 5;
     
     .edges1 {
       border: .12em dotted $starColor;
@@ -73,7 +74,8 @@
     
     &.small {
       left: 30%;
-      transform: scale(.3);
+      transform: scale(.33);
+      z-index:1;
 
       .corner1, .corner2, .corner3, .corner4 {
         z-index: 4;
@@ -83,7 +85,8 @@
     &.x-small {
       left: 40%;
       top: 30%;
-      transform: scale(.22);
+      transform: scale(.25);
+      z-index: 0;
 
       .corner1, .corner2, .corner3, .corner4 {
         z-index: 3;
@@ -93,7 +96,8 @@
     &.xx-small {
       left: 20%;
       top: 30%;
-      transform: scale(.19);
+      transform: scale(.2);
+      z-index: -1;
       .corner1, .corner2, .corner3, .corner4 {
         z-index: 2;
       }

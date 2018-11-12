@@ -1,8 +1,65 @@
-$background: #000;
+$background: #000f1e;
+$nav:#696969;
+$text-primary: #fff;
 @import 'stars';
+
+@font-face {
+  font-family: "Calling Code";
+  src: url("css/fonts/CallingCode.otf");
+  src: url("css/fonts/Harabara.otf") format("opentype"),
+}
+
+* {
+	box-sizing: border-box;
+}
 
 body {
   background-color: $background;
-  
+  font-family: 'Calling Code';
+  color: $text-primary;
+  margin: 0;
 
+  header {
+    width: 100%;
+    height: auto;
+    z-index: 10;
+    background: rgba($nav,.2);
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 1em;
+    
+  }
+
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .nav-links {
+    margin-top: 5px;
+    margin-right: 20px;
+    float: right;
+  }
+
+  .jacobson span,
+  .nav-links span {
+    padding: 10px 15px;
+    // text-transform: uppercase;
+    text-align: center;
+    display: inline-block;
+  }
+
+  span {
+    &.jacobson {
+      font-size: 48px;
+      margin-left: 20px;
+    }
+
+    &.nav-item {
+      font-size: 32px;
+    }
+
+  }
 }

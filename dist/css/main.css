@@ -2,16 +2,17 @@
   position: absolute;
   top: 51vh;
   left: 52vw;
-  transform: scale(0.4);
-  float: left; }
+  transform: scale(0.5);
+  float: left;
+  z-index: 5; }
   .star .edges1 {
-    border: 0.12em dotted #c3a40f;
+    border: 0.12em dotted #EEDC82;
     padding: .1em; }
   .star .edges2 {
-    border: 0.12em dotted #c3a40f; }
+    border: 0.12em dotted #EEDC82; }
   .star .corner {
     position: absolute;
-    background-color: #000;
+    background-color: #000f1e;
     height: 2.8em;
     width: 2.7em;
     margin: -.45em; }
@@ -36,7 +37,7 @@
       z-index: 5;
       border-radius: 3em 0 0 0; }
   .star .circle1 {
-    border: 0.12em dotted #c3a40f;
+    border: 0.12em dotted #EEDC82;
     padding: .3em;
     height: .5em;
     width: .5em;
@@ -44,7 +45,7 @@
     margin-top: -.4em;
     margin-left: -.4em; }
   .star .circle2 {
-    border: 0.13em dotted #c3a40f;
+    border: 0.13em dotted #EEDC82;
     padding: .7em;
     height: .5em;
     width: .5em;
@@ -53,21 +54,62 @@
     margin-top: -.02em; }
   .star.small {
     left: 30%;
-    transform: scale(0.3); }
+    transform: scale(0.33);
+    z-index: 1; }
     .star.small .corner1, .star.small .corner2, .star.small .corner3, .star.small .corner4 {
       z-index: 4; }
   .star.x-small {
     left: 40%;
     top: 30%;
-    transform: scale(0.22); }
+    transform: scale(0.25);
+    z-index: 0; }
     .star.x-small .corner1, .star.x-small .corner2, .star.x-small .corner3, .star.x-small .corner4 {
       z-index: 3; }
   .star.xx-small {
     left: 20%;
     top: 30%;
-    transform: scale(0.19); }
+    transform: scale(0.2);
+    z-index: -1; }
     .star.xx-small .corner1, .star.xx-small .corner2, .star.xx-small .corner3, .star.xx-small .corner4 {
       z-index: 2; }
 
+@font-face {
+  font-family: "Calling Code";
+  src: url("css/fonts/CallingCode.otf");
+  src: url("css/fonts/Harabara.otf") format("opentype"); }
+
+* {
+  box-sizing: border-box; }
+
 body {
-  background-color: #000; }
+  background-color: #000f1e;
+  font-family: 'Calling Code';
+  color: #fff;
+  margin: 0; }
+  body header {
+    width: 100%;
+    height: auto;
+    z-index: 10;
+    background: rgba(105, 105, 105, 0.2);
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 1em; }
+  body ul {
+    margin: 0;
+    padding: 0;
+    list-style: none; }
+  body .nav-links {
+    margin-top: 5px;
+    margin-right: 20px;
+    float: right; }
+  body .jacobson span,
+  body .nav-links span {
+    padding: 10px 15px;
+    text-align: center;
+    display: inline-block; }
+  body span.jacobson {
+    font-size: 48px;
+    margin-left: 20px; }
+  body span.nav-item {
+    font-size: 32px; }
